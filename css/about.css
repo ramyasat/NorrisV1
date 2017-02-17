@@ -10,8 +10,8 @@ body {
 
 <img src="Cafe.png"/>
 
-.full {
-    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+.about {
+    background: url('Cafe.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
