@@ -5,7 +5,24 @@
 html { 
   background: url(Cafe.jpg) no-repeat center fixed; 
   background-size: cover;
-  opacity: 0.2;
+}
+  div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+div::after {
+  content: "";
+  background: url(Cafe.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 body { 
@@ -19,7 +36,7 @@ body {
     padding-left: 80px;
     font-family: "Lato", sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     overflow: scroll;
     background color:#eee;
     margin-top: 100px;
@@ -36,7 +53,7 @@ body {
     padding-left: 80px;
     font-family: "Lato", sans-serif;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
 }
   
 </style>
