@@ -1,60 +1,31 @@
-<div class="module">
-  
-  <header>
-    <h1>
-      About this project
-    </h1>
-  </header>
-</div>
-
-.module {
-  background: url(Cafe.jpg);
-  background-attachment: fixed;
-  width: 400px;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  margin: 20px;
-}
-.module > header {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10px;
-  background: inherit;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-.module > header::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background: inherit;
-  background-attachment: fixed;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-.module > header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25)
-}
-.module > header > h1 {
-  margin: 0;
-  color: white;
-  position: relative;
-  z-index: 1;
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+html { 
+  background: url(Cafe.png) no-repeat center fixed; 
+  background-size: cover;
 }
 
-* {
-  box-sizing: border-box;
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
+body { 
+  color: white; 
+}
+</style>
+</head>
+<body>
 
+<h1>About this project</h1>
+
+<p> This project is an attempt at trying to understand understand the connections between cities and infrastructural projects such as dams. 
+  My test site is the town of Norris in Tennessee built by the Tennessee Valley Authority. Today, parts of Norris are on the National Register for Historical Places. 
+  In trying to bring out connections between cities and infrastructure, I think it is important to bring out human stories. I am using photographs (from the Library of Congress FSA collection) to think about the urban form. 
+  One of underlying aspects of my project is to try and analyze Norris for what it is — a model company town that embodied a certain utopia. 
+
+So then what is the story? Simply put the story is to try and think about the relationships between cities and infrastructure through people’s lives. </p> 
+
+</body>
+</html>
