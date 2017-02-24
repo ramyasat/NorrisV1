@@ -44,25 +44,25 @@ body {
     
   
 .sidenav {
-    height: 100%;
+    height: 10%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .sidenav a {
-    padding: 4px 4px 4px 16px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     font-family: "Lato", sans-serif;
     color: #818181;
-    display: block;
+    display: inline;
     transition: 0.3s
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .sidenav .closebtn {
-    position: absolute;
+    position: inline;
     top: 0;
     right: 25px;
     font-size: 36px;
@@ -79,6 +79,7 @@ body {
 }
 
 #main {
+    transition: margin-left 0.5s;
     padding: 4px;
 }
 
@@ -114,7 +115,7 @@ function closeNav() {
   
 <h1>About this project</h1>
 
-<div> This project is an attempt at trying to understand understand the connections between cities and infrastructural projects such as dams. 
+<div> This project is an attempt at trying to understand the connections between cities and infrastructural projects such as dams. 
   My test site is the town of Norris in Tennessee built by the Tennessee Valley Authority. Today, parts of Norris are on the 
   National Register for Historical Places. 
   In trying to bring out connections between cities and infrastructure, I think it is important to bring out human stories. I am using 
