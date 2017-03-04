@@ -79,15 +79,15 @@ body {
     display: block;
     transition: 0.3s
 }
-.sidenav a:hover{
-  color:#d8d8d8;
+.sidenav a:link{
+  color: #818181;
   }
-  .sidenav a:link{
-  color:#818181;
+.sidenav a:hover{
+  color: #d8d8d8;
   }
   
 .sidenav a:visited{
-  color:#f2f2f2;
+  color: #f2f2f2;
   } 
   
   
@@ -109,6 +109,7 @@ body {
     top: 0;
     right: 25px;
     font-size: 36px;
+    font-color: #818181;
     margin-left: 100px;
   }    
   
@@ -117,6 +118,7 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  }
   
 </style>
 </head>
@@ -146,7 +148,9 @@ body {
   
   <h2>NorrisTown</h2>
  
-  <span style="font-size:20px;cursor:pointer" onclick="openNav()">more</span>
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;more </span>
+
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
@@ -165,6 +169,8 @@ function closeNav() {
   One of underlying aspects of my project is to try and analyze Norris for what it is — a model company town that embodied 
   a certain utopia. 
   So then what is the story? Simply put the story is to try and think about the relationships between cities and infrastructure through people’s lives. </div> 
+
+
 </body>
 </html>
-
+Contact GitHub API Training Shop Blog About
