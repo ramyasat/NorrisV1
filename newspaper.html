@@ -200,15 +200,31 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+  
+  function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
   </script>
   
-  <script src="/js/pdfobject.js"></script>
-  
-  <script>PDFObject.embed("NYT.pdf", "#pdf");</script>
+ 
  
  <h1>Media Coverage on Norris</h1>
 <div id="about"> Need text here  </div> 
   <div id="pdf"></div>
+  
+ <div id="NYT.pdf">
+    Content of page 1
+    <a href="#" onclick="return show('Page2','Page1');">Next</a>
+  </div>
+
+  <div id="Norris Rises.pdf" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('Page1','Page2');">Previous</a>
+  </div>
+
+  
  
  
   
