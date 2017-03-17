@@ -154,6 +154,26 @@ h2 a:visited{
   
   /*}transition: margin-left .5s;
 }*/ 
+  
+  
+  
+  /*.
+  <div id="NYT.pdf">
+    Content of page 1
+    <a href="#" onclick="return show('Page2','Page1');">Next</a>
+  </div>
+
+  <div id="Norris Rises.pdf" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('Page1','Page2');">Previous</a>
+  </div>
+  function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+*/.
+  
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -201,11 +221,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
   
-  function show(shown, hidden) {
-  document.getElementById(shown).style.display='block';
-  document.getElementById(hidden).style.display='none';
-  return false;
-}
+  
   </script>
   
  
@@ -214,16 +230,13 @@ function closeNav() {
 <div id="about"> Need text here  </div> 
   <div id="pdf"></div>
   
- <div id="NYT.pdf">
-    Content of page 1
-    <a href="#" onclick="return show('Page2','Page1');">Next</a>
-  </div>
-
-  <div id="Norris Rises.pdf" style="display:none">
-    Content of page 2
-    <a href="#" onclick="return show('Page1','Page2');">Previous</a>
-  </div>
-
+ <object data='NYT.pdf, Norris Rises.pdf' 
+        type='application/pdf' 
+        width="200" 
+        height="100">
+<p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="NYT.pdf, Norris Rises.pdf">Download PDF</a></p>
+</object>
+  
   
  
  
