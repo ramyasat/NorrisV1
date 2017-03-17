@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+html { 
+  background: url(cafe3.jpg) no-repeat center fixed; 
+  background-size: cover;
+  width: 100%; 
+}
+   
+body { 
+    color: white;
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;   
+}
+  
+  #about {
+    background-color: #000000;
+    width: 500px;
+    border: 25px #000000;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    overflow: scroll;
+    background color:#eee;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    line-height: 200%;
+}
+ 
+   h1 {
+    padding-top: -10px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    font-family: "Lato", sans-serif; 
+    text-align: center;
+    font-size: 50px;
+}
+    
+ h2 {
+    font-family: "Lato", sans-serif; 
+    font-size: 20px;
+}
+  h2 a:link{
+  color: #818181;
+  }
+h2 a:hover{
+  color: #d8d8d8;
+  } 
+h2 a:visited{
+  color: #f2f2f2;
+  } 
+  
+/*.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}*/
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:link{
+  color: #818181;
+  }
+.sidenav a:hover{
+  color: #d8d8d8;
+  }
+  
+.sidenav a:visited{
+  color: #f2f2f2;
+  } 
+  
+  
+  /*.
+.sidenav a:hover {
+   color: #d8d8d8;
+}
+.sidenav a:link {
+   color: #818181;
+}
+  
+.sidenav a:visited {
+  color: #f2f2f2;
+  }
+  }*/
+  
+.sidenav .closebtn {
+    position: inline;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-color: #818181;
+    margin-left: 100px;
+  }    
+  
+  /*}transition: margin-left .5s;
+}*/ 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+  
+</style>
+</head>
+  
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About the project</a>
+  <a href="archival.html">Archival Sources</a>
+  <a href="aboutme.html">The Confused Grad student attempting this?</a>
+  <a href="newspaper.html">Media coverage about Norris</a>
+  <a href="tavstuff.html">TVA generated material</a>
+  <a href="pressrelease.html">Press Releases</a>
+  <a href="essays.html">Essays about Norris</a>
+  <a href="rationale.html">Rationale of Typologies</a>
+  <a href="typologies.html">Housing Typologies</a>
+  <a href="plans.html">Plans, Elevations and Housing types</a>
+  <a href="photos1.html">Photos from the FSA</a>
+  <a href="photos2.html">Photos from/by the TVA</a>
+  <a href="photos3.html">Norris today</a>
+  <a href="companytowns1">Brief History of Company Towns</a>
+  <a href="companytowns2.html">Other sources</a>
+  <a href="companytowns3.html">Essays</a>
+  
+  
+</div>
+  
+ <h2>
+    <a href=index.html>NorrisTown</a></h2>
+
+ 
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;more </span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+ 
+ <h1>About this project</h1>
+<div id="about"> This project is an attempt at trying to understand the connections between cities and infrastructural projects such as dams. 
+  My test site is the town of Norris in Tennessee built by the Tennessee Valley Authority. Today, parts of Norris are on the 
+  National Register for Historical Places. 
+  In trying to bring out connections between cities and infrastructure, I think it is important to bring out human stories. I am using 
+  photographs (from the Library of Congress FSA collection) to think about the urban form. 
+  One of underlying aspects of my project is to try and analyze Norris for what it is — a model company town that embodied 
+  a certain utopia. 
+  So then what is the story? Simply put the story is to try and think about the relationships between cities and infrastructure through people’s lives. </div> 
+
+
+</body>
+</html>
