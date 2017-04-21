@@ -136,9 +136,7 @@ h2 a:visited{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   }
-  
-<iframe style="align:right">
-	
+  	
 </style>
 	
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,7 +149,6 @@ body {font-family: "Lato",sans-serif;margin:0}
 .slideshow-container {
   max-width: 1000px;
   max-height: 850px;
-  align: center;
   position: relative;
   margin: auto;
 }
@@ -247,6 +244,43 @@ body {font-family: "Lato",sans-serif;margin:0}
 
 	
 <body>
+	
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About the project</a>
+  <a href="archival.html">Archival Sources</a>
+  <a href="aboutme.html">The Confused Grad student attempting this?</a>
+  <a href="newspaper.html">Media coverage about Norris</a>
+  <a href="tvastuff.html">TVA generated material</a>
+  <a href="pressrelease.html">Press Releases</a>
+  <a href="essays.html">Essays about Norris</a>
+  <a href="rationale.html">Rationale of Typologies</a>
+  <a href="typologies.html">Understanding Housing Typologies through Construction History</a>
+  <a href="plans.html">Plans</a>
+  <a href="elevations.html"> Elevations</a>
+  <a href="housingtypes.html"> Rent Schedules</a>
+  <a href="photos1.html">Photos from the FSA</a>
+  <a href="photos2.html">Photos from/by the TVA</a>
+  <a href="photos3.html">Norris today</a>
+  <a href="companytowns1">Brief History of Company Towns</a>
+  <a href="companytowns2.html">Other sources</a>
+  <a href="companytowns3.html">Essays</a>
+  
+  
+</div>
+  
+  <h2>
+    <a href=index.html>NorrisTown</a></h2>
+ 
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;more </span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -339,41 +373,6 @@ function showSlides(n) {
 </script>	
 
   
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="about.html">About the project</a>
-  <a href="archival.html">Archival Sources</a>
-  <a href="aboutme.html">The Confused Grad student attempting this?</a>
-  <a href="newspaper.html">Media coverage about Norris</a>
-  <a href="tvastuff.html">TVA generated material</a>
-  <a href="pressrelease.html">Press Releases</a>
-  <a href="essays.html">Essays about Norris</a>
-  <a href="rationale.html">Rationale of Typologies</a>
-  <a href="typologies.html">Understanding Housing Typologies through Construction History</a>
-  <a href="plans.html">Plans</a>
-  <a href="elevations.html"> Elevations</a>
-  <a href="housingtypes.html"> Rent Schedules</a>
-  <a href="photos1.html">Photos from the FSA</a>
-  <a href="photos2.html">Photos from/by the TVA</a>
-  <a href="photos3.html">Norris today</a>
-  <a href="companytowns1">Brief History of Company Towns</a>
-  <a href="companytowns2.html">Other sources</a>
-  <a href="companytowns3.html">Essays</a>
-  
-  
-</div>
-  
-  <h2>
-    <a href=index.html>NorrisTown</a></h2>
- 
-  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;more </span>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+
 		
 </html>
