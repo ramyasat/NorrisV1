@@ -1,0 +1,106 @@
+/* <!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+    background-color: #e2e2e2;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family:"Lato", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-family: "Lato", sans-serif;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    font-family:"Lato", sans-serif;
+}
+</style>
+</head>
+<body>
+
+
+
+<h2>Welcome to NorrisTown!</h2>
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">About</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="about.html">About the project</a>
+    <a href="archival.html">Archival Sources</a>
+    <a href="aboutme.html">Confused Grad student attempting this?</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">Norris: A Utopia?</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="paperclips.html">Media Coverage</a>
+    <a href="TVA.html">TVA generated material</a>
+    <a href="pressreleases.html">Press Releases and Essays</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:center;">
+  <button class="dropbtn">Understanding Norris</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="housing.html">Rationale of Housing Typologies</a>
+    <a href="typologies.html">Housing Typologies</a>
+    <a href="plans.html">Plans, Elevations of Housing types</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:center;">
+  <button class="dropbtn">Photographing Norris</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="FSA.html">Photographs from the FSA</a>
+    <a href="TVAphotos.html">Photograpghs from/by TVA</a>
+    <a href="today.html">Norris Today</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:center;">
+  <button class="dropbtn">Company Towns in America</button>
+  <div class="dropdown-content">
+    <a href="historycotown.html">Brief History</a>
+    <a href="otherlocations.html">Other sources</a>
+    <a href="essays.html">Essays</a>
+  </div>
+</div>
+
+</body>
+</html>
