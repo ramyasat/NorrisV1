@@ -1,106 +1,151 @@
-<!DOCTYPE html>
-<html>
 <head>
-<style>
-.dropbtn {
-    background-color: #e2e2e2;
+<style> 
+html 
+   
+body { 
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    font-family:"Lato", sans-serif;
-    border: none;
-    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;   
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+  
+  #about {
+    background-color: #000000;
+    width: 1200px;
+    border: 25px #000000;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 28px;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    font-size: 30px;
+    overflow: scroll;
+    background color:#eee;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    line-height: 200%;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+ 
+   h2 {
+    font-family: "Lato", sans-serif; 
+    font-size: 20px;
 }
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+  h2 a:link{
+  color: #818181;
+  }
+h2 a:hover{
+  color: #d8d8d8;
+  } 
+h2 a:visited{
+  color: #f2f2f2;
+  } 
+  
+   h1 {
+    padding-top: -10px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    font-family: "Lato", sans-serif; 
+    text-align: center;
+    font-size: 50px;
+}
+    
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 20px;
+    color: #818181;
     display: block;
+    transition: 0.3s
 }
+.sidenav a:link{
+  color: #818181;
+  }
+.sidenav a:hover{
+  color: #d8d8d8;
+  }
+  
+.sidenav a:visited{
+  color: #f2f2f2;
+  } 
+  
+  
+.sidenav .closebtn {
+    position: inline;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-color: #818181;
+    margin-left: 100px;
+  }    
+  
+  /*}transition: margin-left .5s;
+}*/ 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+  
+  <iframe style="align:center">
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    font-family: "Lato", sans-serif;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-    font-family: "Lato", sans-serif;
-}
-
-h2 {
-    font-family:"Lato", sans-serif;
-}
 </style>
 </head>
+  
 <body>
-
-
-
-<h2>Welcome to NorrisTown!</h2>
-
-<div class="dropdown" style="float:left;">
-  <button class="dropbtn">About</button>
-  <div class="dropdown-content" style="left:0;">
-    <a href="about.html">About the project</a>
-    <a href="archival.html">Archival Sources</a>
-    <a href="aboutme.html">Confused Grad student attempting this?</a>
-  </div>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="about.html">About the project</a>
+  <a href="archival.html">Archival Sources</a>
+  <a href="aboutme.html">The Confused Grad student attempting this?</a>
+  <a href="newspaper.html">Media coverage about Norris</a>
+  <a href="tvastuff.html">TVA generated material</a>
+  <a href="pressrelease.html">Press Releases</a>
+  <a href="essays.html">Essays about Norris</a>
+  <a href="rationale.html">Rationale of Typologies</a>
+  <a href="typologies.html">Understanding Housing Typologies through Construction History</a>
+  <a href="plans.html">Plans</a>
+  <a href="elevations.html"> Elevations</a>
+  <a href="housingtypes.html"> Rent Schedules</a>
+  <a href="photos1.html">Photos from the FSA</a>
+  <a href="companytowns1.html">Brief History of Company Towns</a>
+  <a href="companytowns2.html">Other sources</a>
+  
 </div>
+  
+  <h2>
+    <a href=index.html>NorrisTown</a></h2>
+ 
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;more </span>
 
-<div class="dropdown" style="float:left;">
-  <button class="dropbtn">Norris: A Utopia?</button>
-  <div class="dropdown-content" style="left:0;">
-    <a href="paperclips.html">Media Coverage</a>
-    <a href="TVA.html">TVA generated material</a>
-    <a href="pressreleases.html">Press Releases and Essays</a>
-  </div>
-</div>
 
-<div class="dropdown" style="float:center;">
-  <button class="dropbtn">Understanding Norris</button>
-  <div class="dropdown-content" style="left:0;">
-    <a href="housing.html">Rationale of Housing Typologies</a>
-    <a href="typologies.html">Housing Typologies</a>
-    <a href="plans.html">Plans, Elevations of Housing types</a>
-  </div>
-</div>
-
-<div class="dropdown" style="float:center;">
-  <button class="dropbtn">Photographing Norris</button>
-  <div class="dropdown-content" style="left:0;">
-    <a href="FSA.html">Photographs from the FSA</a>
-    <a href="TVAphotos.html">Photograpghs from/by TVA</a>
-    <a href="today.html">Norris Today</a>
-  </div>
-</div>
-
-<div class="dropdown" style="float:center;">
-  <button class="dropbtn">Company Towns in America</button>
-  <div class="dropdown-content">
-    <a href="historycotown.html">Brief History</a>
-    <a href="otherlocations.html">Other sources</a>
-    <a href="essays.html">Essays</a>
-  </div>
-</div>
-
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+ 
+ <h1>Welcome to NorrisTown!</h1>
+ <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DokR363XfW6gL2WOCAn6b4M-ONo" width="1100" height="800"></iframe>
+  
 </body>
+
 </html>
