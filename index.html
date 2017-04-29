@@ -103,7 +103,20 @@ h2 a:visited{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   }
-  
+   
+  .google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
 </style>
 </head>
@@ -145,6 +158,8 @@ function closeNav() {
 </script>
  
  <h1>Welcome to NorrisTown!</h1>
+   
+   <div class="google-maps">
  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DokR363XfW6gL2WOCAn6b4M-ONo" width="1200" height="700" align="center"></iframe>
   
 </body>
