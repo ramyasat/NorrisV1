@@ -106,7 +106,7 @@ position: absolute;
   
 .about {
     background-color: #000000;
-    width: 400px;
+    width: 350px;
     float: left;
     border: 25px #000000;
     padding-top: 50px;
@@ -123,14 +123,15 @@ position: absolute;
     margin-right: 150px;
     margin-left: 80px;
     line-height: 200%;
-	 
+	 display: inline-block; 
 }
 .slideshow-container {
  width: 900px;
     height:100%;
     border:5px;
-	float: right;
+	align: right;
 	position: absolute;
+	 display: inline-block;
 	
 }
 
@@ -363,7 +364,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "inline-block";  
   dots[slideIndex-1].className += " active";
 }
 </script>	
