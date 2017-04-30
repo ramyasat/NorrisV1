@@ -14,9 +14,24 @@ body {
     transition: background-color .5s;   
 }
   
-  #about {
+  .frame{
+    width: 50%;
+    height:100%;
+    border:5px;
+	float: right;
+    overflow: scroll;
+	display: inline;
+	margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 150px;
+	position: absolute;
+	
+}
+  .about {
     background-color: #000000;
-    width: 400px;  
+    width: 30%;
+     float: left;
     border: 25px #000000;
     padding-top: 50px;
     padding-right: 30px;
@@ -24,7 +39,6 @@ body {
     padding-left: 30px;
     font-family: "Lato", sans-serif;
     text-align: left;
-    display: inline;
     font-size: 30px;
     overflow: scroll;
     background color:#eee;
@@ -33,7 +47,9 @@ body {
     margin-right: 150px;
     margin-left: 80px;
     line-height: 200%;
+	  display: inline;
 }
+ 
  
    h2 {
     font-family: "Lato", sans-serif; 
@@ -76,7 +92,7 @@ h2 a:visited{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 101;
     top: 0;
     left: 0;
     background-color: #111;
@@ -176,9 +192,11 @@ function closeNav() {
 </script>
  
  <h1>Plans, Elevations and Rent Schedules</h1>
-<div id="about"> Need text here  </div> 
-	
-<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="Rents.pdf" align="right" display="inline" frameborder="1" overflow="hidden" scrolling="auto" height="1100" width="850" ></iframe>
-  
+
+	<div class="holder">
+		<div class="about">Since the entire site at Norris was owned by the TVA, workers were expected to rent houses in Norris. This schedule of rent describes the prescribed rent for each type of house based on the cost of construction. As the numbers show, the cost of houses varied from $4,416.78 as in the case of type 22 and as expensive as $10,170.35 as in the case of type 55. Rents varied $23 (type 22) to $48 (type 55) based on the percentage of total cost that the rent was calculated on, which again varied from 0.4% to 0.9%. </div>
+    <iframe class="frame" src="Rents.pdf"></iframe>
+	</div>
+
 </body>
 </html>
