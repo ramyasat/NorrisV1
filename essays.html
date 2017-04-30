@@ -14,9 +14,30 @@ body {
     transition: background-color .5s;   
 }
   
-  #about {
+	.holder{
+    width: 90%;
+  height: 90%;
+position: absolute;
+    
+}
+.frame{
+    width: 50%;
+    height:100%;
+    border:5px;
+	float: right;
+    overflow: scroll;
+	display: inline;
+	margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 150px;
+	position: absolute;
+	
+}
+  .about {
     background-color: #000000;
-    width: 400px;  
+    width: 30%;
+     float: left;
     border: 25px #000000;
     padding-top: 50px;
     padding-right: 30px;
@@ -24,7 +45,6 @@ body {
     padding-left: 30px;
     font-family: "Lato", sans-serif;
     text-align: left;
-    display: inline;
     font-size: 30px;
     overflow: scroll;
     background color:#eee;
@@ -33,6 +53,7 @@ body {
     margin-right: 150px;
     margin-left: 80px;
     line-height: 200%;
+	  display: inline;
 }
  
    h2 {
@@ -76,7 +97,7 @@ h2 a:visited{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 101;
     top: 0;
     left: 0;
     background-color: #111;
@@ -176,9 +197,20 @@ function closeNav() {
 </script>
  
  <h1> Essays on Norris</h1>
-<div id="about"> Need text here </div> 
-	
-<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="All Essays on Norris.pdf" align="right" display="inline" frameborder="1" overflow="hidden" scrolling="auto" height="1100" width="850" ></iframe>
-  
+	<div class="holder">
+		<div class="about">All three essays showcased here were authored by Earle Draper at different times. In 1934, Draper wrote an article in the <i>American Civic and Planning Annual<i> entitled, “The TVA Town of Norris, Tennessee.” In the essay, Draper explains that Norris is planned effort for “a rapidly changing standard of life” [1]. Later in the essay Draper walks the reader through the construction schedule of houses in Norris in addition to laying out the rationale for the typology of housing types. 
+<br/>
+In 1935, Draper published in the <i>American Civic and Planning Annual</i> where he extolled, yet again, the virtues of Norris. In the essay however, Draper did remark that the communities planned by the TVA were neither “fancy—or fanciful,” instead, they were designed “simply as small rural communities that for the time being are to serve the purpose of construction camps”[2]. 
+<br/>
+The third essay, “TVA Planning and Practice” specifically addresses Norris whilst also talking about the rehabilitation activities that the TVA was undertaking as it constructed dams. The essay also addresses the importance of electrification in the Tennessee valley. 
+<br/>
+<br/>
+
+[1] ] Earle Draper, “Housing by the TVA,” <i> American Planning and Civic Annual</i>, 1934, 208.
+[2] Earle Draper, “Housing by the TVA,” <i> American Planning and Civic Annual</i>, 1935, 91.
+
+			</div>
+    <iframe class="frame" src="All Essays on Norris.pdf"></iframe>
+	</div>
 </body>
 </html>
