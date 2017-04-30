@@ -14,9 +14,24 @@ body {
     transition: background-color .5s;   
 }
   
-  #about {
+.frame{
+    width: 50%;
+    height:100%;
+    border:5px;
+	float: right;
+    overflow: scroll;
+	display: inline;
+	margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 150px;
+	position: absolute;
+	
+}
+  .about {
     background-color: #000000;
-    width: 400px;  
+    width: 30%;
+     float: left;
     border: 25px #000000;
     padding-top: 50px;
     padding-right: 30px;
@@ -24,7 +39,6 @@ body {
     padding-left: 30px;
     font-family: "Lato", sans-serif;
     text-align: left;
-    display: inline;
     font-size: 30px;
     overflow: scroll;
     background color:#eee;
@@ -33,7 +47,8 @@ body {
     margin-right: 150px;
     margin-left: 80px;
     line-height: 200%;
-}
+	  display: inline;
+	}
  
    h2 {
     font-family: "Lato", sans-serif; 
@@ -76,7 +91,7 @@ h2 a:visited{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 101;
     top: 0;
     left: 0;
     background-color: #111;
@@ -180,12 +195,10 @@ function closeNav() {
 
 
  <h1>Plans, Elevations and Rent Schedules</h1>
-<div id="about"> Need text here  </div> 
+<div class="holder">
+		<div class="about">This is a set of elevations drawn for one particular house type, 41C, at Norris. The labels on the drawings describe unique features as well as the scale of the drawing. The elevations also show the uneven the terrain was at the site.</div>
+    <iframe class="frame" src="elevations1.pdf"></iframe>
+	</div>
 
-	
-
-
-<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="elevations1.pdf" align="right" display="inline" frameborder="1" overflow="hidden" scrolling="auto" height="1100" width="850" ></iframe>
-  
 </body>
 </html>
