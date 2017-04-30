@@ -13,10 +13,30 @@ body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;   
 }
-  
-  #about {
+	.holder{
+    width: 90%;
+  height: 90%;
+position: absolute;
+    
+}
+.frame{
+    width: 50%;
+    height:100%;
+    border:5px;
+	float: right;
+    overflow: scroll;
+	display: inline;
+	margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 150px;
+	position: absolute;
+	
+}
+  .about {
     background-color: #000000;
-    width: 400px;  
+    width: 30%;
+     float: left;
     border: 25px #000000;
     padding-top: 50px;
     padding-right: 30px;
@@ -24,7 +44,6 @@ body {
     padding-left: 30px;
     font-family: "Lato", sans-serif;
     text-align: left;
-    display: inline;
     font-size: 30px;
     overflow: scroll;
     background color:#eee;
@@ -33,6 +52,7 @@ body {
     margin-right: 150px;
     margin-left: 80px;
     line-height: 200%;
+	  display: inline;
 }
  
    h2 {
@@ -76,7 +96,7 @@ h2 a:visited{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 101;
     top: 0;
     left: 0;
     background-color: #111;
@@ -176,9 +196,11 @@ function closeNav() {
 </script>
  
  <h1>Rationale of Typologies</h1>
-<div id="about"> Need text here  </div> 
+
+	<div class="holder">
+		<div class="about">Norris represented an important moment in American city planning history. Unlike slum clearance projects, Norris aimed at creating a self-contained facility that was distinctly American whilst being rural. One of the biggest virtues of Norris was that it relied on electricity, a new addition to rural life in America. Another was the value it held as an example of unified handling of a housing project. Given the uneven topography of the land, the TVA did not have much flat land at its disposal. It was decided that housing at the site would not be monotonous, instead, houses were to be designed differently, keeping in mind site context i.e. the cohesive design of the neighborhood was more important than the design of individual houses.  Each housing type was such that it could be duplicated elsewhere and often was. Each type had different features depending on its terrain and intended owners. For instance, some houses had screened porches, whilst others did not. Houses were constructed in two phases, in the first phase 152 houses were constructed and in the second phase 130 houses were constructed. Houses constructed in the second phase, especially used a distinct method of construction developed by the TVA i.e. precast beams and slab floors. Over time, as the Norris dam was constructed, some buildings  were remodeled for other uses. </div>
+    <iframe class="frame" src="PressRelease1.pdf"></iframe>
+	</div>
 	
-<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="PressRelease1.pdf" align="right" display="inline" frameborder="1" overflow="hidden" scrolling="auto" height="1100" width="850" ></iframe>
-  
 </body>
 </html>
