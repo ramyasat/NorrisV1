@@ -120,36 +120,28 @@ h2 a:visited{
         width: 100%;
         height: 50%;
     }
+#footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100px;
+}
 
-    #footer {
+#footerContainer {
+    position:relative;
+    width:100%;
+    height:100px;
+}
+
+#imginthefooter {       
+    background: url(footer.png) no-repeat;
+    width:100%;
+    height:300px;
+    top: -108px;  
+    right: 150px; 
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height:114px;
-    overflow: hidden;
-	    float: bottom;  
-    }
- div.column1, div.column2, div.column3 {
-display: block;
-text-align: left;
-	 z-index: 101;
-	 width: 80%;
-}
-
-div.column1 {
- float: left;
- width: 33%;
-}
-
-div.column2 {
- float: center;
- width: 33%;
-}
-	
-div.column3 {
- float: right;
- width: 25%;
 }
 </style>
 </head>
@@ -197,11 +189,11 @@ function closeNav() {
 	</div>
      
 	<div id="footer">
-    <div class="column1"> <img src="Matrix2.jpg"> </div>
-    <div class="column2"> <img src="icons.jpg"> </div>
-    <div class="column3"> <img src="CHI.jpg"> </div>
-    <div style="clear:all"></div>
+  <div id="footerContainer">
+    <div id="imginthefooter"></div>
+  </div>
 </div>
+
 	   
 </body>
 </html>
