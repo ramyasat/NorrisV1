@@ -14,7 +14,22 @@ body {
     transition: background-color .5s;   
 }
   
-  #about {
+	.holder{
+    width: 90%;
+		height: 90%;
+    position:relative
+}
+.frame{
+    width: 50%;
+    height:100%;
+    border:1px;
+    vertical-align:top; 
+    display:inline;
+     frameborder:1;
+	overflow: scroll;
+	
+}
+  .about {
     background-color: #000000;
     width: 40%;
     border: 25px #000000;
@@ -180,13 +195,13 @@ function closeNav() {
 </script>
  
  <h1>TVA Generated Material</h1>
-<div id="about"> 
-	The town of Norris was not just an infrastructural project; it was also an ideological one. The TVA spent a great deal of effort, time and money on popularizing the project. <br />
-	At the National Archives in Atlanta are housed a bulk of the TVA archives. Of these materials, some have been showcased here. <br />One artifact is a letter to the chairman of the TVA board at the time, Arthur Morgan, comparing Norris to a utopia. <br /> Another is an essay written by a TVA employee, Tracy Augur, who wrote about the process of planning and executing Norris.<br /> Over the course of its length, the essay extolls the virtues of Norris not just as a well-planned settlement but also as the embodiment of a particular kind of planning impulse. </div> 
 	
-<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="TVAmaterial.pdf" vertical-align:top display="inline" frameborder="1" overflow="hidden" scrolling="auto" height="1100" width="850" ></iframe>
-  
-    
+	
+	<div class="holder">
+		<div class="about">The town of Norris was not just an infrastructural project; it was also an ideological one. The TVA spent a great deal of effort, time and money on popularizing the project. <br />
+	At the National Archives in Atlanta are housed a bulk of the TVA archives. Of these materials, some have been showcased here. <br />One artifact is a letter to the chairman of the TVA board at the time, Arthur Morgan, comparing Norris to a utopia. <br /> Another is an essay written by a TVA employee, Tracy Augur, who wrote about the process of planning and executing Norris.<br /> Over the course of its length, the essay extolls the virtues of Norris not just as a well-planned settlement but also as the embodiment of a particular kind of planning impulse.</div>
+    <iframe class="frame" src="TVAmaterial.pdf"></iframe>
+	</div>
 	
 	
 </body>
